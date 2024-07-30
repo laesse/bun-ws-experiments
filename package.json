@@ -1,0 +1,20 @@
+{
+  "name": "bun-ws",
+  "module": "server.ts",
+  "type": "module",
+  "scripts": {
+    "serve": "bun run server.ts",
+    "serve-client": "http-server -p 3000 -c-1",
+    "build-client": "bun build client.ts --no-bundle --outfile=client.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "http-server": "^14.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.53"
+  }
+}
